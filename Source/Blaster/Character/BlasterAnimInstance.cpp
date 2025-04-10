@@ -31,10 +31,10 @@ void UBlasterAnimInstance::NativeUpdateAnimation(float DeltaTime)
     bIsAccelerating = BlasterCharacter->GetCharacterMovement()->GetCurrentAcceleration().Size() > 0.f ? true : false;
     bWeaponEquipped = BlasterCharacter->IsWeaponEquipped();
     bIsCrouched = BlasterCharacter->bIsCrouched;
-    /*bAiming = BlasterCharacter->IsAiming();
+    bAiming = BlasterCharacter->IsAiming();
 
     // Offset Yaw for Strafing
-    FRotator AimRotation = BlasterCharacter->GetBaseAimRotation();
+    /*FRotator AimRotation = BlasterCharacter->GetBaseAimRotation();
     FRotator MovementRotation = UKismetMathLibrary::MakeRotFromX(BlasterCharacter->GetVelocity());
     FRotator DeltaRot = UKismetMathLibrary::NormalizedDeltaRotator(MovementRotation, AimRotation);
     DeltaRotation = FMath::RInterpTo(DeltaRotation, DeltaRot, DeltaTime, 6.f);

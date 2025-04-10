@@ -39,8 +39,8 @@ protected:
 	void CrouchButtonPressed();
 
 	/** Called for Aiming input */
-	/*void AimButtonPressed();
-	void AimButtonReleased();*/
+	void AimButtonPressed();
+	void AimButtonReleased();
 
 private:
 	UPROPERTY(VisibleAnywhere, Category = Camera)
@@ -95,5 +95,5 @@ public:
 public:
 	void SetOverlappingWeapon(AWeapon* Weapon);
 	bool IsWeaponEquipped();
-	/*bool IsAiming();*/
+	bool IsAiming();
 };
