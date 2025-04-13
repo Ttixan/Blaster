@@ -1,6 +1,12 @@
+# Rider IDE
+.idea/
+*.sln.iml
+*.csproj.iml
+*.DotSettings
+*.DotSettings.user
+
 # Visual Studio 2015 user specific files
 .vs/
-.idea/
 
 # Compiled Object files
 *.slo
